@@ -36,6 +36,7 @@ const buttonVariants: Variants = {
 const AboutMe = () => {
   return (
     <motion.div
+    id="about-me"
       className="hero h-[670px] md:h-[390px] lg:h-[430px] xl:h-[470px] max-w-[1400px] mx-auto flex flex-col md:flex-row justify-around items-center px-8 md:px-16 relative mt-36 md:mt-0 overflow-hidden"
       initial="hidden"
       whileInView="visible"
@@ -50,11 +51,12 @@ const AboutMe = () => {
       >
         <div className="bg-gradient-to-r from-purple-600 to-blue-600 p-[2px] rounded-full w-56 h-52 md:w-48 lg:w-[280px] md:h-48 lg:h-[280px] xl:w-[300px] xl:h-[300px] absolute left-auto top-[68px] md:left-auto lg:left-20 xl:left-40 md:top-16 lg:top-24 xl:top-24 -z-10 shadow-2xl shadow-purple-900/50"></div>
 
-        <img
-          src="https://i.ibb.co/4pmHtGT/vector-illustration-man-happily-flat-design-style-844724-4324-fotor-bg-remover-202408241495.png"
-          className="w-[280px] lg:w-[360px] xl:w-[420px] rounded-full object-cover"
-          alt="Illustration of Siam H as a developer"
-        />
+  <img
+  src="https://img.freepik.com/free-vector/web-development-programmer-working-laptop-computer_39422-911.jpg?w=420&t=st=1698765432~exp=1698766032~hmac=abc123"
+  className="w-[280px] lg:w-[360px] xl:w-[420px] rounded-full object-cover"
+  alt="Single developer coding JavaScript on a laptop"
+/>
+
       </motion.div>
 
       <motion.div className="text-white flex-1 w-full font-sans">

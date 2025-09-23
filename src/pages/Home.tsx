@@ -4,7 +4,7 @@ import Skill from "../components/Skill";
 import ContactMe from "../components/ContactMe";
 import Projects from "../components/Projects";
 import Services from "../components/Services";
-import BlogSection from "../components/BlogSection";
+// import BlogSection from "../components/BlogSection";
 import FaqSection from "../components/FaqSection/FaqSection";
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
       <section className="max-w-[1400px] mx-auto overflow-hidden">
         <Projects />
         <Skill />
-        <BlogSection />
+        {/* <BlogSection /> */}
         <ContactMe />
         <FaqSection />
       </section>

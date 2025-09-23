@@ -53,6 +53,7 @@ const skillItemVariants: Variants = {
 
 const Skill = () => {
   const { data, isLoading, isError } = useGetSkillsQuery<SkillsApiResponse>(undefined);
+  // console.log('first data:', data);
   const skills: SkillItem[] = data?.data || [];
 
   if (isLoading) {

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"; // Import motion from framer-motion
 import Experience from "./Experience";
+import image from '../assets/portfolio-profile.jpg'; // Import your profile image
 
 // Define animation variants for the text
 const textVariants = {
@@ -38,7 +39,7 @@ export default function Banner() {
             Hello, I'm
           </p>
           <h1 className="text-5xl lg:text-8xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600 whitespace-nowrap lg:whitespace-normal xl:whitespace-nowrap">
-            Siam H
+            Siam 
           </h1>
           <h2 className="text-3xl lg:text-5xl font-semibold text-white text-right md:text-left">
             MERN Full Stack Developer
@@ -62,7 +63,7 @@ export default function Banner() {
           animate="animate"
           variants={buttonVariants}
         >
-          <a href="https://drive.google.com/uc?export=download&id=1VvI3kxUpt8bto3pNdxnCyRcVJ4xnRROx">
+          <a href="resume link">
             <motion.button
               className="px-7 py-3 md:py-4 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium text-xs md:text-sm shadow-lg shadow-purple-500/40 transition hover:from-purple-700 hover:to-blue-700"
               whileHover="hover" // Apply hover animation from variants
@@ -92,7 +93,7 @@ export default function Banner() {
         variants={imageVariants} // Apply image animation variants
       >
         <img
-          src="https://i.ibb.co.com/mbxXm7k/172934885366601111111111.png"
+          src={image}
           className="absolute rounded-full w-[325px] h-[325px] object-cover inset-0 -top-8 mx-auto bg-white/5"
           alt="Siam H profile"
         />
@@ -106,7 +107,7 @@ export default function Banner() {
         variants={imageVariants} // Apply image animation variants
       >
         <img
-          src="https://i.ibb.co.com/mbxXm7k/172934885366601111111111.png"
+          src={image}
           className="absolute rounded-full md:w-full md:h-[350px] lg:h-[440px] xl:h-[520px] object-cover inset-0 md:-top-8 lg:-top-16 xl:-top-20 mx-auto bg-transparent"
           alt="Siam H profile"
         />

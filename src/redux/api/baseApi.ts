@@ -6,9 +6,13 @@ const baseApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:5000",
     prepareHeaders: (headers, { getState }) => {
-      const token = (getState() as RootState).auth.token;
-      if (token) {
-        headers.set("authorization", `Bearer ${token}`);
+      try {
+        const token = (getState() as RootState)?.auth?.token;
+        if (token) {
+          headers.set("authorization", `Bearer ${token}`);
+        }
+      } catch (err) {
+        console.warn("Failed to attach token:", err);
       }
       return headers;
     },

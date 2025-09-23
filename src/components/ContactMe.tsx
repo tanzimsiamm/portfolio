@@ -92,6 +92,7 @@ export default function ContactMe() {
   return (
     <Container>
       <motion.section
+        id="contact-me"
         className="h-[850px] md:h-[500px] lg:h-[560px] xl:h-[600px] bg-auto md:bg-cover mt-[120px] md:mt-36 xl:mt-40 px-7 md:px-12 lg:px-20"
         initial="hidden"
         whileInView="visible"

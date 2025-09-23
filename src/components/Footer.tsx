@@ -90,7 +90,7 @@ export default function Footer() {
           <h2 className="text-gray-300 font-semibold text-xl mb-5">Contact</h2>
           <div className="flex flex-col gap-2 text-gray-400 font-light">
             <span className="transition">+880 1614131676</span>
-            <span className="transition">siam@example.com</span>
+            <span className="transition">siam88536@example.com</span>
             <span className="transition">Tangail, Bangladesh</span>
           </div>
         </motion.div>

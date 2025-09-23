@@ -7,7 +7,7 @@ import { IoArrowRedoOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/features/authentication/authSlice";
 import { toast } from "sonner";
-import { motion, type Variants } from 'framer-motion';
+import { motion, type Variants } from "framer-motion";
 import DrawerNav from "./DrawerNavbar";
 
 interface AuthState {
@@ -25,7 +25,11 @@ interface RootState {
 
 const navbarVariants: Variants = {
   hidden: { opacity: 0, y: -100 },
-  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 70, damping: 15, delay: 0.2 } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 70, damping: 15, delay: 0.2 },
+  },
 };
 
 const navLinkVariants: Variants = {
@@ -41,8 +45,14 @@ const iconVariants: Variants = {
 };
 
 const dropdownMenuVariants: Variants = {
-  hidden: { opacity: 0, y: -10, scale: 0.95, pointerEvents: 'none' },
-  visible: { opacity: 1, y: 0, scale: 1, pointerEvents: 'auto', transition: { duration: 0.2, ease: "easeOut" } },
+  hidden: { opacity: 0, y: -10, scale: 0.95, pointerEvents: "none" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    pointerEvents: "auto",
+    transition: { duration: 0.2, ease: "easeOut" },
+  },
 };
 
 export default function Navbar() {
@@ -52,23 +62,47 @@ export default function Navbar() {
 
   const logoutUser = (): void => {
     dispatch(logout());
-    toast.success('Logged out successfully!');
-    navigate('/');
+    toast.success("Logged out successfully!");
+    navigate("/");
   };
 
   const navLinks = (
     <>
       <motion.li variants={navLinkVariants}>
-        <NavLink className={({ isActive }) => isActive ? 'font-bold gradient-text px-3 py-[3px] rounded' : 'text-gray-300 transition-colors hover:text-purple-400'} to='/'>Home</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "font-bold gradient-text px-3 py-[3px] rounded"
+              : "text-gray-300 transition-colors hover:text-purple-400"
+          }
+          to="/"
+        >
+          Home
+        </NavLink>
       </motion.li>
       <motion.li variants={navLinkVariants}>
-        <NavLink className={({ isActive }) => isActive ? 'font-bold gradient-text px-3 py-[3px] rounded' : 'text-gray-300 transition-colors hover:text-purple-400'} to='/projects'>Projects</NavLink>
+        <a
+    href="#projects"
+    className="text-gray-300 transition-colors hover:text-purple-400"
+  >
+    Projects
+  </a>
       </motion.li>
       <motion.li variants={navLinkVariants}>
-        <NavLink className={({ isActive }) => isActive ? 'font-bold gradient-text px-3 py-[3px] rounded' : 'text-gray-300 transition-colors hover:text-purple-400'} to='/about-me'>About Me</NavLink>
+        <a
+    href="#about-me"
+    className="text-gray-300 transition-colors hover:text-purple-400"
+  >
+    About Me
+  </a>
       </motion.li>
       <motion.li variants={navLinkVariants}>
-        <NavLink className={({ isActive }) => isActive ? 'font-bold gradient-text px-3 py-[3px] rounded' : 'text-gray-300 transition-colors hover:text-purple-400'} to='/contact-me'>Contact</NavLink>
+        <a
+    href="#contact-me"
+    className="text-gray-300 transition-colors hover:text-purple-400"
+  >
+    Contact Me
+  </a>
       </motion.li>
     </>
   );
@@ -82,12 +116,18 @@ export default function Navbar() {
     >
       <div className="navbar-start z-50 w-fit">
         <motion.div className="dropdown z-50" variants={iconVariants}>
-          <label htmlFor="my-drawer" className={`lg:hidden text-[22px] md:text-2xl cursor-pointer`}>
+          <label
+            htmlFor="my-drawer"
+            className={`lg:hidden text-[22px] md:text-2xl cursor-pointer`}
+          >
             <TbMenuDeep className="text-gray-200" />
           </label>
           <DrawerNav />
         </motion.div>
-        <motion.div className="flex items-center gap-4 pl-4 md:pl-8" variants={navLinkVariants}>
+        <motion.div
+          className="flex items-center gap-4 pl-4 md:pl-8"
+          variants={navLinkVariants}
+        >
           <p className="text-[20px] md:text-xl lg:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 whitespace-nowrap border-r border-purple-500/80 rounded pr-4">
             Siam
           </p>
@@ -129,19 +169,32 @@ export default function Navbar() {
           <FaGithub />
         </motion.a>
 
-        <motion.div className="dropdown dropdown-end flex items-center justify-center gap-2" variants={iconVariants}>
+        <motion.div
+          className="dropdown dropdown-end flex items-center justify-center gap-2"
+          variants={iconVariants}
+        >
           {!user && (
-            <motion.a href="/login" className="text-gray-200" whileHover="hover" whileTap="tap">
+            <motion.a
+              href="/login"
+              className="text-gray-200"
+              whileHover="hover"
+              whileTap="tap"
+            >
               <BiLogInCircle />
             </motion.a>
           )}
 
           {user && (
             <div className="relative">
-              <label tabIndex={0} className="w-8 md:w-9 rounded-full p-[2px] cursor-pointer">
+              <label
+                tabIndex={0}
+                className="w-8 md:w-9 rounded-full p-[2px] cursor-pointer"
+              >
                 <img
                   alt="profile"
-                  src={user?.image || 'https://i.ibb.co/Ttgtb82/pngwing-com-15.png'}
+                  src={
+                    user?.image || "https://i.ibb.co/Ttgtb82/pngwing-com-15.png"
+                  }
                   className="size-8 lg:size-8 object-cover rounded-full border border-purple-400 p-[1px]"
                 />
               </label>
@@ -157,17 +210,27 @@ export default function Navbar() {
                 {user?.name && (
                   <li className="text-lg p-2 border-b border-gray-700 font-semibold gradient-text flex items-center gap-2">
                     {user.name}
-                    <img alt="profile" src={user?.image || 'https://i.ibb.co/Ttgtb82/pngwing-com-15.png'} className="w-8 h-8 object-cover rounded-full border border-gray-500 p-[1px]" />
+                    <img
+                      alt="profile"
+                      src={
+                        user?.image ||
+                        "https://i.ibb.co/Ttgtb82/pngwing-com-15.png"
+                      }
+                      className="w-8 h-8 object-cover rounded-full border border-gray-500 p-[1px]"
+                    />
                   </li>
                 )}
-                {user?.role === 'admin' && (
-                  <NavLink to='/dashboard/projects' className="block">
+                {user?.role === "admin" && (
+                  <NavLink to="/dashboard/projects" className="block">
                     <li className="text-base font-medium cursor-pointer transition-all text-gray-300 p-2 rounded hover:text-cyan-400 flex items-center gap-2">
                       <MdDashboardCustomize /> Dashboard
                     </li>
                   </NavLink>
                 )}
-                <li onClick={logoutUser} className="text-base font-medium cursor-pointer transition-all text-gray-300 p-2 rounded hover:text-cyan-400 flex items-center gap-2">
+                <li
+                  onClick={logoutUser}
+                  className="text-base font-medium cursor-pointer transition-all text-gray-300 p-2 rounded hover:text-cyan-400 flex items-center gap-2"
+                >
                   <IoArrowRedoOutline /> Log out
                 </li>
               </motion.ul>
