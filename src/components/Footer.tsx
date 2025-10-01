@@ -91,7 +91,7 @@ export default function Footer() {
           <div className="flex flex-col gap-2 text-gray-400 font-light">
             <span className="transition">+880 1614131676</span>
             <span className="transition">siam88536@example.com</span>
-            <span className="transition">Tangail, Bangladesh</span>
+            <span className="transition">Tangail, Dhaka, Bangladesh</span>
           </div>
         </motion.div>
 

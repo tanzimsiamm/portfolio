@@ -82,27 +82,35 @@ export default function Navbar() {
       </motion.li>
       <motion.li variants={navLinkVariants}>
         <a
-    href="#projects"
-    className="text-gray-300 transition-colors hover:text-purple-400"
-  >
-    Projects
-  </a>
+          href="#projects"
+          className="text-gray-300 transition-colors hover:text-purple-400"
+        >
+          Projects
+        </a>
       </motion.li>
       <motion.li variants={navLinkVariants}>
         <a
-    href="#about-me"
-    className="text-gray-300 transition-colors hover:text-purple-400"
-  >
-    About Me
-  </a>
+          href="#skills"
+          className="text-gray-300 transition-colors hover:text-purple-400"
+        >
+          Skills
+        </a>
       </motion.li>
       <motion.li variants={navLinkVariants}>
         <a
-    href="#contact-me"
-    className="text-gray-300 transition-colors hover:text-purple-400"
-  >
-    Contact Me
-  </a>
+          href="#about-me"
+          className="text-gray-300 transition-colors hover:text-purple-400"
+        >
+          About Me
+        </a>
+      </motion.li>
+      <motion.li variants={navLinkVariants}>
+        <a
+          href="#contact-me"
+          className="text-gray-300 transition-colors hover:text-purple-400"
+        >
+          Contact Me
+        </a>
       </motion.li>
     </>
   );

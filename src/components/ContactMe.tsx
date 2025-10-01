@@ -123,7 +123,7 @@ export default function ContactMe() {
                 <ImLocation2 />
               </h4>
               <p className="text-gray-300 text-sm lg:text-base xl:text-lg transition-colors group-hover:text-purple-300">
-                Tangail, Bangladesh
+                Tangail, Dhaka, Bangladesh
               </p>
             </motion.div>
             <motion.div

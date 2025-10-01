@@ -115,7 +115,7 @@ const AboutMe = () => {
               variants={itemVariants}
             >
               <IoLocationSharp className="text-2xl text-purple-400" />
-              Tangail, Bangladesh
+              Tangail, Dhaka, Bangladesh
             </motion.h1>
 
             <motion.h1

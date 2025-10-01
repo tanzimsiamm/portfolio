@@ -66,7 +66,10 @@ const Skill = () => {
 
   return (
     <Container>
-      <section className="px-7 md:px-12 lg:px-20 lg:my-7 xl:my-16">
+      <section
+        id="skills"
+        className="px-7 md:px-12 lg:px-20 lg:my-7 xl:my-16"
+      >
         <motion.h1
           className="text-[34px] md:text-4xl lg:text-5xl pb-14 text-center md:text-left font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-3"
           initial="hidden"
@@ -74,7 +77,7 @@ const Skill = () => {
           variants={titleVariants}
           viewport={{ once: true, amount: 0.5 }}
         >
-          TECHNOLOGIES
+          Skills
         </motion.h1>
 
         <motion.section

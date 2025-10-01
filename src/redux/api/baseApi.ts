@@ -4,7 +4,7 @@ import type { RootState } from "../store";
 const baseApi = createApi({
   reducerPath: "baseApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:5000",
+    baseUrl: "https://my-portfolio-backend-rho.vercel.app",
     prepareHeaders: (headers, { getState }) => {
       try {
         const token = (getState() as RootState)?.auth?.token;
