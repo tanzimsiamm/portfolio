@@ -123,7 +123,7 @@ const AboutMe = () => {
               variants={itemVariants}
             >
               <AiOutlineMail className="text-2xl text-purple-400" />
-              siam88536@gmail.com
+              tanjim.siyam.tech@gmail.com
             </motion.h1>
           </div>
         </motion.section>

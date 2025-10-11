@@ -39,7 +39,7 @@ export default function Banner() {
             Hello, I'm
           </p>
           <h1 className="text-5xl lg:text-8xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600 whitespace-nowrap lg:whitespace-normal xl:whitespace-nowrap">
-            Siam 
+            Siyam 
           </h1>
           <h2 className="text-3xl lg:text-5xl font-semibold text-white text-right md:text-left">
             MERN Full Stack Developer
@@ -95,7 +95,7 @@ export default function Banner() {
         <img
           src={image}
           className="absolute rounded-full w-[325px] h-[325px] object-cover inset-0 -top-8 mx-auto bg-white/5"
-          alt="Siam H profile"
+          alt="Siyam H profile"
         />
       </motion.div>
 
@@ -109,7 +109,7 @@ export default function Banner() {
         <img
           src={image}
           className="absolute rounded-full md:w-full md:h-[350px] lg:h-[440px] xl:h-[520px] object-cover inset-0 md:-top-8 lg:-top-16 xl:-top-20 mx-auto bg-transparent"
-          alt="Siam H profile"
+          alt="Siyam H profile"
         />
       </motion.div>
 

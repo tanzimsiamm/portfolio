@@ -137,7 +137,7 @@ export default function Navbar() {
           variants={navLinkVariants}
         >
           <p className="text-[20px] md:text-xl lg:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 whitespace-nowrap border-r border-purple-500/80 rounded pr-4">
-            Siam
+            Siyam
           </p>
         </motion.div>
       </div>

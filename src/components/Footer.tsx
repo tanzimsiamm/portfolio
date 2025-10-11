@@ -50,7 +50,7 @@ export default function Footer() {
         <motion.div className="space-y-5 col-span-12 md:col-span-5 lg:col-span-4 xl:col-span-4" variants={columnItemVariants}>
           <div className="flex items-center gap-1">
             <h2 className={`font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 text-2xl lg:text-3xl xl:text-4xl whitespace-nowrap`}>
-              Siam
+              Siyam
             </h2>
           </div>
           <p className="text-gray-400 text-[15px] font-light">
@@ -90,7 +90,7 @@ export default function Footer() {
           <h2 className="text-gray-300 font-semibold text-xl mb-5">Contact</h2>
           <div className="flex flex-col gap-2 text-gray-400 font-light">
             <span className="transition">+880 1614131676</span>
-            <span className="transition">siam88536@example.com</span>
+            <span className="transition">tanjim.siyam.tech@gmail.com</span>
             <span className="transition">Tangail, Dhaka, Bangladesh</span>
           </div>
         </motion.div>
@@ -119,7 +119,7 @@ export default function Footer() {
         </motion.div>
       </motion.section>
       <div className="text-center text-gray-500 text-sm py-4 border-t border-gray-800 mt-8">
-        <p>&copy; {new Date().getFullYear()} Siam. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Siyam. All rights reserved.</p>
       </div>
     </div>
   );

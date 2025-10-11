@@ -147,7 +147,7 @@ export default function ContactMe() {
                 <AiOutlineMail />
               </h4>
               <p className="text-gray-300 text-sm lg:text-base xl:text-lg transition-colors group-hover:text-purple-300">
-                siam88536@gmail.com
+                tanjim.siyam.tech@gmail.com
               </p>
             </motion.div>
             <motion.div

@@ -103,7 +103,7 @@ const DrawerNav: React.FC = () => {
 
             <div className="flex items-center gap-2 mt-2 mb-8">
               <h2 className={`text-xl font-bold whitespace-nowrap gradient-text`}>
-                Siam
+                Siyam
               </h2>
             </div>
 
