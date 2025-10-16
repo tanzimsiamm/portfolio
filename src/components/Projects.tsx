@@ -103,12 +103,12 @@ const Projects = () => {
             >
               <div className="bg-gray-900/90 backdrop-blur-sm rounded-2xl h-full flex flex-col">
                 {/* Image */}
-                <div className="h-[200px] md:h-[190px] lg:h-[220px] xl:h-[280px] w-full rounded-t-2xl overflow-hidden">
+                 <div className="h-[200px] md:h-[190px] lg:h-[220px] xl:h-[280px] w-full rounded-t-2xl overflow-hidden">
                   {project?.image && (
                     <img
                       src={project.image}
-                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       alt={project.title}
+                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
                   )}
                 </div>

@@ -159,12 +159,12 @@ export default function ContactMe() {
                 <FaLinkedinIn />
               </h4>
               <a
-                href="https://www.linkedin.com/in/tanjimsiddikisiyam/"
+                href="https://www.linkedin.com/in/tanjimsiddikisiyam1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 text-sm lg:text-base xl:text-lg transition-colors group-hover:text-purple-300"
               >
-                linkedin.com/in/tanjimsiddikisiyam
+                linkedin.com/in/tanjimsiddikisiyam1
               </a>
             </motion.div>
           </motion.div>

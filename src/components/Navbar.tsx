@@ -155,7 +155,7 @@ export default function Navbar() {
 
       <div className="flex text-xl md:text-2xl gap-3 md:gap-4 xl:gap-6">
         <motion.a
-          href="https://www.linkedin.com/in/tanjimsiddikisiyam"
+          href="https://www.linkedin.com/in/tanjimsiddikisiyam1"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-200"

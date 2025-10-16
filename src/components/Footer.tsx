@@ -67,7 +67,7 @@ export default function Footer() {
             <motion.a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="rounded-full" variants={socialIconVariants} whileHover="hover" whileTap="tap">
               <FaXTwitter />
             </motion.a>
-            <motion.a href="https://www.linkedin.com/in/tanjimsiddikisiyam" target="_blank" rel="noopener noreferrer" className="rounded-full" variants={socialIconVariants} whileHover="hover" whileTap="tap">
+            <motion.a href="https://www.linkedin.com/in/tanjimsiddikisiyam1" target="_blank" rel="noopener noreferrer" className="rounded-full" variants={socialIconVariants} whileHover="hover" whileTap="tap">
               <FaLinkedinIn />
             </motion.a>
             <motion.a href="https://www.pinterest.com/yourprofile" target="_blank" rel="noopener noreferrer" className="rounded-full" variants={socialIconVariants} whileHover="hover" whileTap="tap">
