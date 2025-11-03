@@ -98,7 +98,7 @@ const AboutMe = () => {
           className="flex flex-wrap lg:flex-nowrap items-center gap-5 lg:gap-8 mt-5 lg:mt-6 xl:mt-7"
           variants={itemVariants}
         >
-          <a href="https://drive.google.com/uc?export=download&id=1VvI3kxUpt8bto3pNdxnCyRcVJ4xnRROx">
+          <a href="/public/Siyam_MERN_FullStack_Developer_Resume.pdf.pdf" download>
             <motion.button
               className="px-4 lg:px-5 xl:px-6 py-3 md:py-3 lg:py-4 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium text-xs xl:text-sm shadow-lg shadow-purple-500/40 transition"
               whileHover="hover"

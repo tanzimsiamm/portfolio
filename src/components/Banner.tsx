@@ -63,7 +63,7 @@ export default function Banner() {
           animate="animate"
           variants={buttonVariants}
         >
-          <a href="resume link">
+          <a href="/public/Siyam_MERN_FullStack_Developer_Resume.pdf.pdf" download>
             <motion.button
               className="px-7 py-3 md:py-4 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium text-xs md:text-sm shadow-lg shadow-purple-500/40 transition hover:from-purple-700 hover:to-blue-700"
               whileHover="hover" // Apply hover animation from variants
